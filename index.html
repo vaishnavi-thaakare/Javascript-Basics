@@ -21,26 +21,72 @@
                 <li>String</li>
                 <li>Undefined</li>
             </ol>
-            <li>Non-priitive Data Type</li>
+            <li>Non-primitive Data Type</li>
         </ol>
         <li>Boolean</li>
         <ol>
             <li>True</li>
             <li>False</li>
+
+            var a = true;
+            const b = false;
+            console.log(a);
+            console.log(typeof a)
+            console.log(typeof b)
         </ol>
         <li>Ways of Declaring Variables</li>
         <ol>
             <li>Var</li>
             <li>Let</li>
             <li>Const</li>
+            Updating the value assign to var, let and const var
+            a = 10; console.log(a)
+            var a = 20;
+            console.log(a)
+
+
+            let b = 100;
+            console.log(b);
+            b = 200;
+            console.log(b);
+            let b = 500;
+            console.log(b)
+            Why after writing let again for same variable it is showing an error ?
+
+
+            const c = 300;
+            console.log(c);
+            const c = 400;
+            console.log(c)
+            1. We have to declare and assign the value at same time in case of const.
+            2. It will show you syantax error that c is already been declared.
         </ol>
+        <hr>
         <li>NaN</li>
+        NaN
+Number has only one type in javascript. It will not differentiate between positive , negative, decimal number
+var a = 0;
+console.log(typeof 0);
+var a = 4.2;
+console.log(typeof a);
+var a = -9;
+console.log(typeof a);
+var a = 0 / 0;
+console.log(typeof a);
+console.log(typeof NaN);
+var a = NaN + 1;
+var a = NaN - 2;
+var a = NaN / 1;
+var a = NaN * 2;
+It is valid in js to do mathematical operation with NaN. It will not show you any kind of error.
+console.log(typeof NaN)
         <li><a href="#string">String</a></li>
     </ol>
-
+    <hr><hr>
 
     <h4>@ NaN-Not a number</h4>
     <p>To check NaN use typeof</p>
+    <hr><hr>
 
 
 
@@ -115,125 +161,108 @@
     console.log(name7.toUpperCase().trim())
     <h3>@ string method with the arguments</h3>
     let name7 = "Good moring, user";
-console.log(name7.slice(3, 7));
-console.log(name7.slice(-4, -1));
-console.log(name7.slice(-4))
-var name8 = "ha"
-console.log(name8.repeat(5));
-var name9 = "good to see your good grades.";
-console.log(name9.replace("good", "bad"));
-console.log(name9.replaceAll("good", "bad"))
-console.log(name9.indexOf("see"));
-console.log(name9.indexOf("good"));
-console.log(name9.indexOf("bad"))
-<hr>
-<h3>@ Template literals</h3>
-let simpleIntrest = 125;
-let userName = "Vaishnavi";
-console.log(userName + " " + "your simple intrest is " + simpleIntrest);
-console.log(`${userName} ,your simple intrest is ${simpleIntrest}`);
-console.log(`The price of this product is $${1+2+9}`)
-<hr><hr>
-<h3>@ if , if-else,if-else if -else and random number</h3>
-const num = Math.floor(Math.random() * 5)
-const num1 = Math.floor(Math.random() * 5 + 20)
-console.log(num1)
-console.log(num)
-if (num % 2 == 0) {
+    console.log(name7.slice(3, 7));
+    console.log(name7.slice(-4, -1));
+    console.log(name7.slice(-4))
+    var name8 = "ha"
+    console.log(name8.repeat(5));
+    var name9 = "good to see your good grades.";
+    console.log(name9.replace("good", "bad"));
+    console.log(name9.replaceAll("good", "bad"))
+    console.log(name9.indexOf("see"));
+    console.log(name9.indexOf("good"));
+    console.log(name9.indexOf("bad"))
+    <hr>
+    <h3>@ Template literals</h3>
+    let simpleIntrest = 125;
+    let userName = "Vaishnavi";
+    console.log(userName + " " + "your simple intrest is " + simpleIntrest);
+    console.log(`${userName} ,your simple intrest is ${simpleIntrest}`);
+    console.log(`The price of this product is $${1+2+9}`)
+    <hr>
+    <hr>
+    <h3>@ if , if-else,if-else if -else and random number</h3>
+    const num = Math.floor(Math.random() * 5)
+    const num1 = Math.floor(Math.random() * 5 + 20)
+    console.log(num1)
+    console.log(num)
+    if (num % 2 == 0) {
     console.log("The number is even")
-}else{
+    }else{
     console.log("The number is odd")
-}
+    }
 
 
 
-const num2 = 3;
-if (num2 == 1) {
+    const num2 = 3;
+    if (num2 == 1) {
     console.log("The number is one")
-} else if (num2 == 2) {
+    } else if (num2 == 2) {
     console.log("The number is two")
-} else if (num2 == 3) {
+    } else if (num2 == 3) {
     console.log("The number is three")
-} else if (num2==4){
+    } else if (num2==4){
     console.log("The number is ")
-} else {
+    } else {
     console.log("The number is five")
-}
+    }
 
-<hr><hr>
-<h3>@ Alert , Prompt </h3>
-var alert1 = alert("Welcome user !")
-var prompt1 = prompt("Enter the number ?")
-console.log(prompt1)
+    <hr>
+    <hr>
+    <h3>@ Alert , Prompt </h3>
+    var alert1 = alert("Welcome user !")
+    var prompt1 = prompt("Enter the number ?")
+    console.log(prompt1)
 
-<hr><hr>
-<h3>@ Nested Condition</h3>
+    <hr>
+    <hr>
+    <h3>@ Nested Condition</h3>
 
-const prompt2 = prompt("Enter the password");
-if (prompt2.length < 6) {
-    console.log("Your password is small")
-  
-} else {
-    console.log("Your password is strong")
-}
+    const prompt2 = prompt("Enter the password");
+    if (prompt2.length < 6) { console.log("Your password is small") } else { console.log("Your password is strong") } if
+        (prompt2.indexOf(" ") === -1) {
+    console.log(" You have entered invalid password") } else { console.log(" Password cannot contain space") } <hr>
+        <hr>
+        <h3>@ truthy and false value</h3>
+        <ol>
+            <li>Null</li>
+            <li>Undefined</li>
+            <li>false</li>
+            <li>0</li>
+            <li>""(empty string)</li>
+        </ol>
 
-if (prompt2.indexOf(" ") === -1) {
-    console.log("You have entered invalid password")
-} else {
-    console.log(" Password cannot contain space")
-}
-<hr><hr>
-<h3>@ truthy and false value</h3>
-<ol>
-    <li>Null</li>
-    <li>Undefined</li>
-    <li>false</li>
-    <li>0</li>
-    <li>""(empty string)</li>
-</ol>
-
-if (" ") {
-    console.log("Truthy")
-} else {
-    console.log("Falsy")
-}
-<hr><hr>
-<h3>@ logical Operater (And, OR , Not</h3>
-var userInput=prompt("Enter the number?")
-const a=10;
-const b=15;
-if (userInput > 10 && userInput < 15) {
-    console.log("The number lies between 10 to 15")
-} else {
-    console.log(" The number is not in range of 10-15")
-}
-
-
-
-
-var userInput2 = prompt("Enter the number?");
-if (userInput2 % 2 != 0) {
-    console.log("The number is odd")
-} else {
-    console.log("The number is even")
-}
-<hr><hr>
-<h3>@ Switch case</h3>
-const day = 1;
-switch (3) {
-    case 1:
-        console.log("Monday")
-        break;
-    case 2:
-        console.log("Thuesday")
-        break;
-    case 3:
-        console.log("Wednesday")
-        break;
-    default:
-        console.log("I dont know")
-        break;
-}
+        if (" ") {
+        console.log("Truthy")
+        } else {
+        console.log("Falsy")
+        }
+        <hr>
+        <hr>
+        <h3>@ logical Operater (And, OR , Not</h3>
+        var userInput=prompt("Enter the number?")
+        const a=10;
+        const b=15;
+        if (userInput > 10 && userInput < 15) { console.log("The number lies between 10 to 15") } else { console.log("
+            The number is not in range of 10-15") } var userInput2=prompt("Enter the number?"); if (userInput2 % 2 !=0)
+            { console.log("The number is odd") } else { console.log("The number is even") } <hr>
+            <hr>
+            <h3>@ Switch case</h3>
+            const day = 1;
+            switch (3) {
+            case 1:
+            console.log("Monday")
+            break;
+            case 2:
+            console.log("Thuesday")
+            break;
+            case 3:
+            console.log("Wednesday")
+            break;
+            default:
+            console.log("I dont know")
+            break;
+            }
 
 
 
@@ -253,7 +282,7 @@ switch (3) {
 
 
 
-    <script src="app.js"></script>
+            <script src="app.js"></script>
 </body>
 
 </html>

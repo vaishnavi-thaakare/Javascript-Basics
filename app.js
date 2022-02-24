@@ -66,10 +66,5 @@
 
 
 
-// Boolean
+Boolean
 
-
-// var a = true;
-// console.log(a);
-// a = 45122;
-// console.log(a)
