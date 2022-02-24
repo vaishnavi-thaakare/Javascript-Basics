@@ -45,24 +45,6 @@
 //     console.log("The number is 2")
 // }
 
-const day = 1;
-switch (3) {
-    case 1:
-        console.log("Monday")
-        break;
-    case 2:
-        console.log("Thuesday")
-        break;
-    case 3:
-        console.log("Wednesday")
-        break;
-        
-       
-
-    default:
-        console.log("I dont know")
-        break;
-}
 
 
 
